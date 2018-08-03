@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         split_hol.collect do |each_word|
           each_word.capitalize!
         end
-        holiday_name = split_hol.join
+        holiday_name = split_hol.join(" ")
       else
         holiday_name.capitalize!
       end
